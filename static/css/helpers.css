@@ -1,0 +1,68 @@
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+    font-size: 17px;
+}
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-title {
+    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #30363d;
+}
+
+
+.weather-first-section {
+    margin-top: 110px;
+}
+
+.weather-sections {
+    width: 95%;
+    max-width: 1450px;
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: rgb(22,27,34);
+    border: 1px solid rgb(48,54,61);
+}
+
+.weather-submains {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+
+.forecolor-green {
+    color: green;
+}
+
+.forecolor-yellow {
+    color: yellow;
+}
+
+.forecolor-orange {
+    color: orange;
+}
+
+.forecolor-red {
+    color: red;
+}

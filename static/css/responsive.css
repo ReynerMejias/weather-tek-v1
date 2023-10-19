@@ -1,0 +1,69 @@
+.res-overflow-body {
+    overflow: hidden;
+}
+
+.res-header {
+    height: 100vh;
+}
+
+.res-hide-elements {
+    display: none;
+}
+
+.res-flex-column {
+    flex-direction: column;
+}
+
+.res-margin-elements {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1060px) {
+    #summary-info-state {
+        height: 30%;
+    }
+    
+    #summary-info-state-ul {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #forecast-carousel-main {
+        width: 800%;
+    }
+
+    #layout-items {
+        gap: 0;
+    }
+
+    
+}
+
+@media (max-width: 760px) {
+    #summary-info {
+        height: 800px;
+    }
+
+    #summary-info-state-ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #forecast-carousel-main {
+        width: 1200%;
+    }
+
+    #section-airquality-main {
+        height: 310px;
+    }
+
+    #section-airquality-main-info-principal {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* #layout-search-box {
+        border: 0;
+    }
+
+    #layout-search {
+        width: 30px;
+    } */
+}

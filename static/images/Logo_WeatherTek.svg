@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364.32 103.29">
+  <defs>
+  
+    <style>
+
+      .cls-1 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #ff0;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5, .cls-4 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 64.73px;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+      .cls-4 {
+        letter-spacing: -.07em;
+      }
+    </style>
+  </defs>
+  <text class="cls-5" transform="translate(55.88 76.62)"><tspan class="cls-3" x="0" y="0">eather</tspan><tspan class="cls-1" x="183.74" y="0">T</tspan><tspan class="cls-2" x="212.12" y="0">ek</tspan></text>
+  <rect class="cls-2" x="319.18" y="8.55" width="21.57" height="6.64" transform="translate(185.75 308.89) rotate(-66.16)"/>
+  <rect class="cls-2" x="330.18" y="11.53" width="31.97" height="6.64" transform="translate(129.12 284.92) rotate(-53.67)"/>
+  <rect class="cls-2" x="344.51" y="27.06" width="19.9" height="6.64" transform="translate(57.86 226.83) rotate(-38.42)"/>
+  <text class="cls-4" transform="translate(7.27 81.06) rotate(-6.88)"><tspan x="0" y="0">W</tspan></text>
+</svg>

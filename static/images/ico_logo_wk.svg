@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228.37 233.36">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 122.44px;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #ff0;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 154.86px;
+        letter-spacing: -.07em;
+        
+      }
+    </style>
+  </defs>
+  <g>
+    <text class="cls-1" transform="translate(130.46 142.53)"><tspan x="0" y="0">k</tspan></text>
+    <rect class="cls-3" x="146.78" y="15.46" width="38.99" height="12" transform="translate(79.45 164.88) rotate(-66.16)"/>
+    <rect class="cls-3" x="166.66" y="20.84" width="57.8" height="12" transform="translate(58.08 168.48) rotate(-53.67)"/>
+    <rect class="cls-3" x="192.56" y="48.91" width="35.97" height="12" transform="translate(11.46 142.72) rotate(-38.42)"/>
+  </g>
+  <text class="cls-2" transform="translate(16.62 182.54) rotate(-6.88)"><tspan x="0" y="0">W</tspan></text>
+</svg>

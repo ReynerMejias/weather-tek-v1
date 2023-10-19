@@ -1,0 +1,41 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Tek</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link rel="stylesheet" href="../static/css/helpers.css">
+        <link rel="stylesheet" href="../static/css/animations.css">
+        <link rel="stylesheet" href="../static/css/responsive.css">
+        <link rel="shortcut icon" href="../static/images/ico_logo_wk.svg" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    </head>
+    <body class="center-flex">
+        <header class="center-flex">
+            <nav id="layout">
+                <ul id="layout-items" >
+                    <a id="layout-items-logo" class="layout-items-item" href="{{url_for('home')}}">
+                        <img src="../static/images/Logo_WeatherTek.svg" alt="Weather Logo">
+                    </a>
+                </ul>
+                <ul class="center-flex" id="layout-buttons">
+                    <button class="weather-button-hover" id="layout-search-show">
+                        <i class="material-icons">search</i>
+                    </button>
+                </ul>
+                
+            </nav>
+            <div style="display: none;" id="search" class="center-flex">
+                <div id="search-box">
+                    <input type="text" name="" id="search-box-text" placeholder="Search city, country or Zip Code">
+                </div>
+                <div id="search-autocomplete">
+                    <form action="{{url_for('home')}}" method="post" id="search-autocomplete-div"></form>
+                </div>
+                <div id="search-exit" class="center-flex weather-button-hover">
+                    <i id="search-exit" class="material-icons">close</i>
+                </div>
+            </div>
+        </header>

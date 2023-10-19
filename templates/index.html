@@ -1,0 +1,122 @@
+{% include "header.html" %}
+    <section class="center-flex weather-first-section weather-sections" id="section-summary">
+        <div class="weather-submains" id="summary-info">
+            <div class="weather-title center-flex">
+                <h3>Current Weather</h3>
+            </div>
+
+            <div class="center-flex" id="summary-info-greetings">
+                <h1>{{data.location.name}}, {{data.location.country}}</h1>
+            </div>
+
+            <div class="center-flex" id="summary-info-condition">
+                <div class="summary-info-condition-item" id="summary-info-condition-main">
+                    <img src="{{data.current.condition.icon}}" alt="Weather's images">
+                    <h2>{{data.current.temp_c}}°</h2>
+                    <h2>{{data.current.condition.text}}</h2>
+                </div>
+            </div>
+
+            <div class="center-flex" id="summary-info-state">
+                <ul id="summary-info-state-ul">
+                    <li class="center-flex">
+                        <h3>Wind</h3>
+                        <h4>{{data.current.wind_kph}} km/h</h4>
+                    </li>
+                    <li class="center-flex">
+                        <h3>Humidity</h3>
+                        <h4>{{data.current.humidity}}%</h4>
+                    </li>
+                    <li class="center-flex">
+                        <h3>Visibility</h3>
+                        <h4>{{data.current.vis_km}} km</h4>
+                    </li>
+                    <li class="center-flex">
+                        <h3>Pressure</h3>
+                        <h4>{{data.current.pressure_mb}} mb</h4>
+                    </li>
+                    <li class="center-flex">
+                        <h3>Ultraviolet light</h3>
+                        <h4>{{data.current.uv}}</h4>
+                    </li class="center-flex">
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="center-flex weather-sections" id="section-forecast">
+        <div class="forecast-actions">
+            <input class="center-flex forecast-actions-buttons" id="forecast-actions-button-previous" type="button" value="↩">
+        </div>
+
+        <div id="forecast-carousel">
+            
+            <div class="weather-submains" id="forecast-carousel-main">
+                <div class="center-flex forecast-carousel-main-items">
+                    <p>Now</p>
+                    <h3>{{forecast_data[0].temp_c}}°</h3>
+                    <img src="{{forecast_data[0].condition.icon}}" alt="Weather's images">
+                    <p> 💧 {{forecast_data[0].humidity}}%</p>
+                </div>
+                {% for time in forecast_data[1:] %}
+                <div class="center-flex forecast-carousel-main-items">
+                    {% if  time.time.split(" ")[1].split(":")[0] != "00" %}
+                    <p>{{time.time.split(" ")[1]}}</p>
+                    {% else %}
+                    <p>{{time.time.split(" ")[0].replace("-", "/")[5:]}}</p>
+                        {% endif %}
+                        
+                        <h3>{{time.temp_c}}°</h3>
+                        <img src="{{time.condition.icon}}" alt="Weather's images">
+                        <p> 💧 {{time.humidity}}%</p>
+                    </div>
+                    {% endfor %}
+                </div>
+        </div>
+
+        <div class="forecast-actions">
+            <input class="center-flex forecast-actions-buttons" id="forecast-actions-button-next" type="button" value="↪">
+        </div>
+    </section>
+        
+    <section class="center-flex weather-sections" id="section-airquality">
+        <div class="center-flex weather-submains" id="section-airquality-main">
+            <div class="weather-title center-flex">
+                <h3>Air Quality</h3>
+            </div>
+            <div class="center-flex" id="section-airquality-main-info">   
+                <div class="center-flex" id="section-airquality-main-info-status">
+                    <h3  class="forecolor-{{aiq_data[0][0]}}">{{aiq_data[1][1]}}</h3>
+                    <p>{{aiq_data[0][1]}}</p>
+                </div>
+                
+                <div id="section-airquality-main-info-principal" class="center-flex">
+                {% for element in aiq_data[2] %}
+                    <div class="center-flex section-airquality-main-info-element">
+                        <h3>{{element[1]}}</h3>
+                        <p>{{element[0].upper()}}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="center-flex weather-sections" id="section-astro">
+        <div class="weather-submains" id="astro-main">
+            <div class="center-flex" id="astro-main-elements">
+                <div class="center-flex astro-main-elements-item" id="astro-main-elements-day">
+                    <i class="material-icons">light_mode</i>
+                    <h3>{{data.forecast.forecastday[0].astro.sunrise}}</h2>
+                </div>
+                <div class="center-flex astro-main-elements-item" id="astro-main-elements-night">
+                    <i class="material-icons">dark_mode</i>
+                    <h3>{{data.forecast.forecastday[0].astro.sunset}}</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h4 id="link_contact">If you encounter any issues, please don't hesitate to <a href="{{url_for('contact')}}">contact me</a>.</h4>
+
+{% include "footer.html" %}
