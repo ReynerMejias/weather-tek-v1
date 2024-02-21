@@ -25,7 +25,3 @@ WEATHER_API_KEY=TU_CLAVE_DE_API_AQUI
 5. Instala las dependencias del proyecto ejecutando `pip install -r requirements.txt`.
 6. Ejecuta la aplicación con el comando `python app.py`.
 7. Abre tu navegador web y accede a `http://localhost:5000` para utilizar la aplicación.
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Si deseas mejorar esta aplicación o agregar nuevas características, siéntete libre de hacer un fork de este repositorio y enviar un pull request con tus cambios.
