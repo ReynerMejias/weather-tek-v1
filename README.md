@@ -1,4 +1,4 @@
-# Aplicación de Clima con Flask 'WeatherTek'
+# Aplicación de Clima con Flask 'WeatherTek' ⛅
 
 Esta aplicación web fue desarrollada utilizando Flask y la API de WeatherAPI.com para proporcionar información meteorológica en tiempo real. Esta es la primera versión de la aplicación; actualmente, se está trabajando en una versión remasterizada con un diseño más atractivo utilizando React.
 
